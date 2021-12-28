@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Patmanda Jan 2022 Installation",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/icons/iPad2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Patmanda 2022",
+  "short_name": "~iPad2~",
+  "start_url": "/ipad1.html"
+}
