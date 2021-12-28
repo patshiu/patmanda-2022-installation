@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iPad 0</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="manifest" href="manifest1.webmanifest">
+    <link rel="apple-touch-icon" sizes="129x129" href="icons/iPad1.png">
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script src="vid-controls.js"></script>
+<script>
+    var thisName = 'iPad1';
+    var socket = io();
+    socket.on("connect", () => {
+        socket.emit('deviceConnects', thisName);
+    });
+
+    //vid controls 
+    socket.on("playVids", () => {
+        console.log("PLAY");
+        playPause(document.getElementById(thisName));
+    });
+    socket.on("resetVids", () => {
+        console.log("RESET");
+        rewind(document.getElementById(thisName));
+    });
+</script>
+
+<body>
+    <div class="container">
+        <h1>iPad 1</h1>
+        <video id="iPad1" class="vid" playsinline muted="muted" preload="auto" loop>
+            <source src="timecode-h264.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+
+</html>

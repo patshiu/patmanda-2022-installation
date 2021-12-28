@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>🔮PATMANDA✨TIME🔮</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .status-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h3 {
+            text-align: center;
+            border: 1px solid rgb(128, 128, 128);
+            margin: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        h3>a,
+        h3>a:visited {
+            color: blue;
+            text-decoration: none;
+            border-bottom: 3px solid blue;
+        }
+
+        h3>a:hover,
+        h3>a:focus,
+        h3>a:active {
+            color: fuchsia;
+        }
+
+        h3>div {
+            margin-top: 0.5rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+        }
+
+        .offline {
+            color: rgb(117, 117, 117);
+        }
+
+        .online {
+            background-color: limegreen;
+            color: white;
+        }
+
+        #controls {
+            display: flex;
+        }
+
+        #controls>button {
+            margin: 1rem 3rem;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    var connectionTable = Object;
+
+    socket.on("connect", () => {
+        socket.emit('controlPanelConnected', 'foo');
+    });
+
+    // Update Connection Table on Change 
+    socket.on("connectionReport", (data) => {
+        connectionTable = data;
+        console.log("connectionReport received");
+        showLatestConnectionStatus(connectionTable);
+    });
+
+    //TODO: Write function to reflect lastest connections 
+    function showLatestConnectionStatus(connectionTable) {
+        for (const connection in connectionTable) {
+            var name = String(connection);
+            var online = connectionTable[connection].online
+            // if connection is iPad or iPhone, display status
+            if (name !== 'controlPanel') {
+                var targetEl = document.getElementById(name + "Status");
+                if (online) {
+                    targetEl.innerHTML = "ONLINE&nbsp;";
+                    targetEl.classList = ["online"];
+                } else {
+                    targetEl.innerHTML = "offline";
+                    targetEl.classList = ["offline"];
+                }
+            }
+        }
+    }
+
+    // socket.on("newConnection", (socketId, name) => {
+    //     console.log('New connection:\t ' + name + " @ " + socketId)
+    //     document.getElementById(name + "Status").innerHTML = "ONLINE&nbsp;";
+    //     document.getElementById(name + "Status").classList = ["online"];
+    // });
+    // socket.on("newDisconnection", (socketId, name) => {
+    //     console.log('New disconnection:\t ' + name + " @ " + socketId)
+    //     document.getElementById(name + "Status").innerHTML = "offline";
+    //     document.getElementById(name + "Status").classList = ["offline"];
+    // });
+
+    function playVids() {
+        console.log("Calling global PLAY");
+        socket.emit('callPlayVids', 'foo');
+    }
+
+    function resetVids() {
+        console.log();
+        console.log("Calling global RESET");
+        socket.emit('callResetVids', 'foo');
+    }
+
+</script>
+
+<body>
+    <div class="container">
+        <div class="status-box">
+            <h3>
+                <a href="/ipad0.html" target="_blank">iPad 0</a>
+                <div id="iPad0Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/ipad1.html" target="_blank">iPad 1</a>
+                <div id="iPad1Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/ipad2.html" target="_blank">iPad 2</a>
+                <div id="iPad2Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/ipad3.html" target="_blank">iPad 3</a>
+                <div id="iPad3Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/ipad4.html" target="_blank">iPad 4</a>
+                <div id="iPad4Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/ipad5.html" target="_blank">iPad 5</a>
+                <div id="iPad5Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/ipad6.html" target="_blank">iPad 6</a>
+                <div id="iPad6Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/ipad7.html" target="_blank">iPad 7</a>
+                <div id="iPad7Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/iphone0.html" target="_blank">iPhone 0</a>
+                <div id="iPhone0Status" class="offline">offline</div>
+            </h3>
+            <h3>
+                <a href="/iphone1.html" target="_blank">iPhone 1</a>
+                <div id="iPhone1Status" class="offline">offline</div>
+            </h3>
+        </div>
+        <div id="controls">
+            <button onClick="playVids()">Play / Pause</button>
+            <button onClick="resetVids()">Reset All</button>
+        </div>
+    </div>
+</body>
+
+</html>
