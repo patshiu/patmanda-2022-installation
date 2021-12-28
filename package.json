@@ -1,0 +1,22 @@
+{
+  "name": "patmanda-sockets",
+  "version": "1.0.0",
+  "description": "patmanda installation syncronized video backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "installation",
+    "video",
+    "synchronized",
+    "playback",
+    "patmanda"
+  ],
+  "author": "pat shiu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "socket.io": "^4.4.0"
+  }
+}
