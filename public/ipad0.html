@@ -9,31 +9,54 @@
 </head>
 <script src="/socket.io/socket.io.js"></script>
 <script src="vid-controls.js"></script>
-<script>
-    var thisName = 'iPad0';
-    var socket = io();
-    socket.on("connect", () => {
-        socket.emit('deviceConnects', thisName);
-    });
-
-    //vid controls 
-    socket.on("playVids", () => {
-        console.log("PLAY");
-        playPause(document.getElementById(thisName));
-    });
-    socket.on("resetVids", () => {
-        console.log("RESET");
-        rewind(document.getElementById(thisName));
-    });
-</script>
 
 <body>
     <h1>iPad 0</h1>
+    <h2 id="timer">00:00:00</h2>
     <div class="container">
         <video id="iPad0" class="vid" playsinline muted="muted" preload="auto" loop>
             <source src="vids/iPad0.mp4" type="video/mp4">
         </video>
     </div>
+    <script>
+        var thisName = 'iPad0';
+        document.read
+        var video = document.getElementById(thisName);
+
+        var socket = io();
+        socket.on("connect", () => {
+            socket.emit('deviceConnects', thisName);
+        });
+
+        //vid controls 
+        socket.on("playVids", () => {
+            console.log("PLAY / PAUSE");
+            playPause(video);
+            showTimecode();
+        });
+        socket.on("resetVids", () => {
+            console.log("RESET");
+            rewind(video);
+            showTitle();
+        });
+
+        video.ontimeupdate = (e) => {
+            console.log(video.currentTime);
+        }
+
+        video.ontimeupdate = (e) => {
+            var hours = parseInt(video.currentTime / (60 * 60), 10);
+            var minutes = parseInt(video.currentTime / 60, 10);
+            var seconds = video.currentTime % 60;
+            seconds = seconds.toFixed(0);
+            seconds = String(seconds).padStart(2, '0');
+            if (hours == 0) {
+                document.getElementById("timer").innerHTML = minutes + ":" + seconds
+            } else {
+                document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds
+            }
+        }
+    </script>
 </body>
 
 </html>
