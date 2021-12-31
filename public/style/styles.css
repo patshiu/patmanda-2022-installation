@@ -4,11 +4,24 @@ body {
     Arial, sans-serif;
 }
 
+h1 {
+  position: absolute;
+  width: 100%;
+  inset: 2rem auto auto auto;
+  z-index: 100;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 5rem;
+  text-align: center;
+}
+
 .container {
+  max-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .vid {
