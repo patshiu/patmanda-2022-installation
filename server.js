@@ -72,6 +72,7 @@ io.on('connection', (socket) => {
   socket.on('callPlayVids', () => {
     console.log("Global PLAY/PAUSE called");
     socket.broadcast.emit('playVids', 'blah');
+    //TODO: When vids are done, call reset and play again. This is to prevent issues with lagging vids. 
   });
 
   socket.on('callResetVids', () => { 
@@ -92,8 +93,6 @@ io.on('connection', (socket) => {
     console.log('Sending connectionTable to control panel.');
     socket.emit("connectionReport", connectionTable);
   });
-
-  //TODO: Function to send CP current connections 
 
   // Device Connects
   socket.on('deviceConnects', (name) => {
