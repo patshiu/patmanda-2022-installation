@@ -32,12 +32,11 @@
         socket.on("playVids", () => {
             console.log("PLAY / PAUSE");
             playPause(video);
-            showTimecode();
         });
         socket.on("resetVids", () => {
             console.log("RESET");
             rewind(video);
-            showTitle();
+
         });
 
         video.ontimeupdate = (e) => {

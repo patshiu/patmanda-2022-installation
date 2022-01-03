@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <title>iPad 0</title>
-    <h2 id="timer">00:00:00</h2>
+    <title>iPad 1</title>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="manifest" href="manifest1.webmanifest">
     <link rel="apple-touch-icon" sizes="129x129" href="icons/iPad1.png">
@@ -13,6 +12,7 @@
 
 <body>
     <h1>iPad 1</h1>
+    <h2 id="timer">00:00:00</h2>
     <div class="container">
         <video id="iPad1" class="vid" playsinline muted="muted" preload="auto" loop>
             <source src="vids/iPad1.mp4" type="video/mp4">
@@ -37,7 +37,7 @@
         socket.on("resetVids", () => {
             console.log("RESET");
             rewind(video);
-            showTitle();
+
         });
 
         video.ontimeupdate = (e) => {
