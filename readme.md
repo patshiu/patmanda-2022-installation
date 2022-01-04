@@ -17,8 +17,9 @@
 ### Pat's To Do's:
 
 - [x] Normalize CSS
-- [ ] Set up cache
+- [x] Set up cache
 - [x] Host vids externally
+- [ ] Set up periodic auto-reset
 
 #### Video URLS
 
@@ -32,3 +33,5 @@ iPad6.mp4 — https://dl.dropboxusercontent.com/s/7fxlyn3fyyu7d8b/iPad6.mp4?dl=
 iPad7.mp4 — https://dl.dropboxusercontent.com/s/ar7leph9t2za55m/iPad7.mp4?dl=0
 iPhone0.mp4 — https://dl.dropboxusercontent.com/s/bgeklkyh0128eqy/iPhone0.mp4?dl=0
 iPhone1.mp4 — https://dl.dropboxusercontent.com/s/e0z0cifg6nm10be/iPhone1.mp4?dl=0
+
+timecode-h264.mp4 - https://dl.dropboxusercontent.com/s/94x86el5u7onvcg/timecode-h264.mp4?dl=0
