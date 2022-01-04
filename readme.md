@@ -18,4 +18,17 @@
 
 - [x] Normalize CSS
 - [ ] Set up cache
-- [ ] Host vids externally
+- [x] Host vids externally
+
+#### Video URLS
+
+iPad0.mp4 — https://dl.dropboxusercontent.com/s/kd0gc5cv1ay3b4l/iPad0.mp4?dl=0
+iPad1.mp4 — https://dl.dropboxusercontent.com/s/2ibvmae3kpnquct/iPad1.mp4?dl=0
+iPad2.mp4 — https://dl.dropboxusercontent.com/s/5hp6dsft5xcgrgr/iPad2.mp4?dl=0
+iPad3.mp4 — https://dl.dropboxusercontent.com/s/uxlvd01bvr2k8gg/iPad3.mp4?dl=0
+iPad4.mp4 — https://dl.dropboxusercontent.com/s/mr794qsn542rzk4/iPad4.mp4?dl=0
+iPad5.mp4 — https://dl.dropboxusercontent.com/s/vpbstoqr01k6f8f/iPad5.mp4?dl=0
+iPad6.mp4 — https://dl.dropboxusercontent.com/s/7fxlyn3fyyu7d8b/iPad6.mp4?dl=0
+iPad7.mp4 — https://dl.dropboxusercontent.com/s/ar7leph9t2za55m/iPad7.mp4?dl=0
+iPhone0.mp4 — https://dl.dropboxusercontent.com/s/bgeklkyh0128eqy/iPhone0.mp4?dl=0
+iPhone1.mp4 — https://dl.dropboxusercontent.com/s/e0z0cifg6nm10be/iPhone1.mp4?dl=0
