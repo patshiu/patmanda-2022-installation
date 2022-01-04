@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="manifest" href="manifest0.webmanifest">
     <link rel="apple-touch-icon" sizes="129x129" href="icons/iPad0.png">
+    <link rel="icon" type="image/png" href="icons/iPad0.png">
 </head>
-<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.socket.io/4.4.0/socket.io.min.js"
+    integrity="sha384-1fOn6VtTq3PWwfsOrk45LnYcGosJwzMHv+Xh/Jx5303FVOXzEnw0EpLv30mtjmlj"
+    crossorigin="anonymous"></script>
 <script src="vid-controls.js"></script>
 
 <body>
     <h1>iPad 0</h1>
     <h2 id="timer">00:00:00</h2>
     <div class="container">
-        <video id="iPad0" class="vid" playsinline muted="muted" preload="auto" loop>
+        <video id="iPad0" class="vid" playsinline controls muted="muted" preload="auto" loop>
             <source src="https://dl.dropboxusercontent.com/s/kd0gc5cv1ay3b4l/iPad0.mp4?dl=0" type="video/mp4">
         </video>
     </div>
@@ -54,6 +57,19 @@
             } else {
                 document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds
             }
+        }
+
+        //Cache Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw-ipad0.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
         }
     </script>
 </body>
