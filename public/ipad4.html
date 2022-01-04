@@ -3,6 +3,7 @@
 
 <head>
     <title>iPad 4</title>
+    <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/styles.css">
     <link rel="manifest" href="manifest4.webmanifest">
     <link rel="apple-touch-icon" sizes="129x129" href="icons/iPad2.png">
@@ -15,7 +16,7 @@
     <h2 id="timer">00:00:00</h2>
     <div class="container">
         <video id="iPad4" class="vid" playsinline muted="muted" preload="auto" loop>
-            <source src="vids/iPad4.mp4" type="video/mp4">
+            <source src="https://dl.dropboxusercontent.com/s/mr794qsn542rzk4/iPad4.mp4?dl=0" type="video/mp4">
         </video>
     </div>
     <script>
@@ -32,12 +33,10 @@
         socket.on("playVids", () => {
             console.log("PLAY / PAUSE");
             playPause(video);
-            showTimecode();
         });
         socket.on("resetVids", () => {
             console.log("RESET");
             rewind(video);
-
         });
 
         video.ontimeupdate = (e) => {
