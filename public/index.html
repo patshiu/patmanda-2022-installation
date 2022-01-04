@@ -74,6 +74,7 @@
 <script>
     var socket = io();
     var connectionTable = Object;
+    var vidsPlaying = false;
 
     socket.on("connect", () => {
         socket.emit('controlPanelConnected', 'foo');
@@ -117,12 +118,22 @@
     // });
 
     function playVids() {
-        console.log("Calling global PLAY");
+        vidsPlaying = !vidsPlaying;
+        if (vidsPlaying === true) {
+            console.log("Calling global PLAY");
+            //TODO If play, setTimeout to resetVids in 1.5mins
+            //const resetTimeout = setTimeout(resetVids, 109077);
+            //const resetTimeout = setTimeout(resetVids, 3000);
+        } else {
+            console.log("Calling global PAUSE");
+            //TODO If pause, pause timeout
+        }
         socket.emit('callPlayVids', 'foo');
     }
 
     function resetVids() {
-        console.log();
+        vidsPlaying = false;
+        //TODO If Timeout is active, clearTimeout
         console.log("Calling global RESET");
         socket.emit('callResetVids', 'foo');
     }
