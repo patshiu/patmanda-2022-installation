@@ -1,6 +1,6 @@
 # [https://patmanda-2022.onrender.com/](https://patmanda-2022.onrender.com/)
 
-Setup:
+## Setup:
 
 1. Download & install node js https://nodejs.org/en/download/
 2. Open applications > terminal, and cd to the project directory
@@ -13,3 +13,9 @@ Setup:
 - The videos may now be controlled from the control panel
 
 5. to the server stop hit `ctrl + c`
+
+### Pat's To Do's:
+
+- [x] Normalize CSS
+- [ ] Set up cache
+- [ ] Host vids externally
