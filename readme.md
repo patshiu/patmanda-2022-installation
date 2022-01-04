@@ -24,6 +24,7 @@
 #### Video URLS
 
 iPad0.mp4 — https://dl.dropboxusercontent.com/s/kd0gc5cv1ay3b4l/iPad0.mp4?dl=0
+iPad0.mp4 - (recompressed) https://dl.dropboxusercontent.com/s/z086yzqv3m6kry8/iPad0.mp4?dl=0
 iPad1.mp4 — https://dl.dropboxusercontent.com/s/2ibvmae3kpnquct/iPad1.mp4?dl=0
 iPad2.mp4 — https://dl.dropboxusercontent.com/s/5hp6dsft5xcgrgr/iPad2.mp4?dl=0
 iPad3.mp4 — https://dl.dropboxusercontent.com/s/uxlvd01bvr2k8gg/iPad3.mp4?dl=0
