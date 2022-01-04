@@ -40,7 +40,7 @@ iPhone1.mp4 — https://dl.dropboxusercontent.com/s/e0z0cifg6nm10be/iPhone1.mp4
 (recompressed) iPad1.mp4 — https://dl.dropboxusercontent.com/s/ugtxh29hsxc6gru/iPad1-100mb.mp4?dl=0
 (recompressed) iPad2.mp4 — https://dl.dropboxusercontent.com/s/zhy8m6urk32m1af/iPad2-100mb.mp4?dl=0
 (recompressed) iPad3.mp4 — https://dl.dropboxusercontent.com/s/pz7b2adgby9ezuq/iPad3-100mb.mp4?dl=0
-(recompressed) iPad4.mp4 — https://dl.dropboxusercontent.coms/n18t1ts5bsp4xeg/iPad4-100mb.mp4?dl=0
+(recompressed) iPad4.mp4 — https://dl.dropboxusercontent.com/s/n18t1ts5bsp4xeg/iPad4-100mb.mp4?dl=0
 (recompressed) iPad5.mp4 — https://dl.dropboxusercontent.com/s/gpn0p0hdt8lf5kq/iPad5-100mb.mp4?dl=0
 (recompressed) iPad6.mp4 — https://dl.dropboxusercontent.com/s/4bjtsfnlnivpysn/iPad6-100mb.mp4?dl=0
 (recompressed) iPad7.mp4 — https://dl.dropboxusercontent.com/s/83j3us444zfbkb8/iPad7-100mb.mp4?dl=0
