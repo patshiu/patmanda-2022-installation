@@ -1,4 +1,4 @@
-const staticCacheName = 'iPad5Cache-v1';
+const staticCacheName = 'iPad5Cache-v5';
 const assets = [
     'ipad5.html',
     'https://dl.dropboxusercontent.com/s/gpn0p0hdt8lf5kq/iPad5-100mb.mp4?dl=0',
