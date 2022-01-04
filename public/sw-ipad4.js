@@ -1,7 +1,7 @@
 const staticCacheName = 'iPad4Cache-v1';
 const assets = [
     'ipad4.html',
-    'https://dl.dropboxusercontent.com/s/mr794qsn542rzk4/iPad4.mp4?dl=0',
+    'https://dl.dropboxusercontent.coms/n18t1ts5bsp4xeg/iPad4-100mb.mp4?dl=0',
     'style/normalize.css',
     'style/styles.css',
     'https://cdn.socket.io/4.4.0/socket.io.min.js',

@@ -34,7 +34,17 @@ iPad7.mp4 — https://dl.dropboxusercontent.com/s/ar7leph9t2za55m/iPad7.mp4?dl=0
 iPhone0.mp4 — https://dl.dropboxusercontent.com/s/bgeklkyh0128eqy/iPhone0.mp4?dl=0
 iPhone1.mp4 — https://dl.dropboxusercontent.com/s/e0z0cifg6nm10be/iPhone1.mp4?dl=0
 
-TEST VID URLS
-iPad0.mp4 - (recompressed) https://dl.dropboxusercontent.com/s/z086yzqv3m6kry8/iPad0.mp4?dl=0
+#### Recompress / Test Video URLS
+
+(recompressed)iPad0.mp4 - https://dl.dropboxusercontent.com/s/83bhuozolwtyxpc/iPad0-100mb.mp4?dl=0
+(recompressed) iPad1.mp4 — https://dl.dropboxusercontent.com/s/ugtxh29hsxc6gru/iPad1-100mb.mp4?dl=0
+(recompressed) iPad2.mp4 — https://dl.dropboxusercontent.com/s/zhy8m6urk32m1af/iPad2-100mb.mp4?dl=0
+(recompressed) iPad3.mp4 — https://dl.dropboxusercontent.com/s/pz7b2adgby9ezuq/iPad3-100mb.mp4?dl=0
+(recompressed) iPad4.mp4 — https://dl.dropboxusercontent.coms/n18t1ts5bsp4xeg/iPad4-100mb.mp4?dl=0
+(recompressed) iPad5.mp4 — https://dl.dropboxusercontent.com/s/gpn0p0hdt8lf5kq/iPad5-100mb.mp4?dl=0
+(recompressed) iPad6.mp4 — https://dl.dropboxusercontent.com/s/4bjtsfnlnivpysn/iPad6-100mb.mp4?dl=0
+(recompressed) iPad7.mp4 — https://dl.dropboxusercontent.com/s/83j3us444zfbkb8/iPad7-100mb.mp4?dl=0
+(recompressed) iPhone0.mp4 — https://dl.dropboxusercontent.com/s/9ggrk9ago2n3zpx/iPhone0-100mb.mp4?dl=0
+(recompressed) iPhone1.mp4 — https://dl.dropboxusercontent.com/s/ac446qk3mpv82at/iPhone1-100mb.mp4?dl=0
 
 timecode-h264.mp4 - https://dl.dropboxusercontent.com/s/94x86el5u7onvcg/timecode-h264.mp4?dl=0

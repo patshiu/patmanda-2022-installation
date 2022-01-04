@@ -1,7 +1,7 @@
 const staticCacheName = 'iPhone1Cache-v1';
 const assets = [
     'iphone1.html',
-    'https://dl.dropboxusercontent.com/s/e0z0cifg6nm10be/iPhone1.mp4?dl=0',
+    'https://dl.dropboxusercontent.com/s/ac446qk3mpv82at/iPhone1-100mb.mp4?dl=0',
     'style/normalize.css',
     'style/styles.css',
     'https://cdn.socket.io/4.4.0/socket.io.min.js',
