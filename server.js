@@ -11,6 +11,10 @@ let connectionTable = {
     online: false,
     id: null,
   },
+  audio: {
+    online: false,
+    id: null,
+  },
   iPad0: {
     online: false,
     id: null,
