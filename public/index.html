@@ -59,11 +59,11 @@
             color: white;
         }
 
-        #controls {
+        .controls {
             display: flex;
         }
 
-        #controls>button {
+        .controls>button {
             margin: 1rem 3rem;
             padding: 1rem 2rem;
             text-transform: uppercase;
@@ -106,17 +106,6 @@
         }
     }
 
-    // socket.on("newConnection", (socketId, name) => {
-    //     console.log('New connection:\t ' + name + " @ " + socketId)
-    //     document.getElementById(name + "Status").innerHTML = "ONLINE&nbsp;";
-    //     document.getElementById(name + "Status").classList = ["online"];
-    // });
-    // socket.on("newDisconnection", (socketId, name) => {
-    //     console.log('New disconnection:\t ' + name + " @ " + socketId)
-    //     document.getElementById(name + "Status").innerHTML = "offline";
-    //     document.getElementById(name + "Status").classList = ["offline"];
-    // });
-
     function playVids() {
         vidsPlaying = !vidsPlaying;
         if (vidsPlaying === true) {
@@ -136,6 +125,17 @@
         //TODO If Timeout is active, clearTimeout
         console.log("Calling global RESET");
         socket.emit('callResetVids', 'foo');
+    }
+
+    // show / hide debugging details
+    function showDebug() {
+        console.log("Show debugging details");
+        socket.emit('debugOn', 'foo');
+    }
+
+    function hideDebug() {
+        console.log("Hide debugging details");
+        socket.emit('debugOff', 'foo');
     }
 
 </script>
@@ -184,8 +184,18 @@
                 <div id="iPhone1Status" class="offline">offline</div>
             </h3>
         </div>
-        <div id="controls">
-            <button onClick="playVids()">Play / Pause</button>
+        <h2>Debugging Controls</h2>
+        <div class="controls">
+            <button onClick="playVids()">Debug Play / Pause</button>
+            <!-- TODO: Implement show/hide debug controls -->
+            <button onClick="showDebug()">Debug Details On</button>
+            <button onClick="hideDebug()">Debug Details Off</button>
+        </div>
+        <hr />
+        <h2>Live Controls</h2>
+        <div class="controls">
+            <!-- TODO: Implement timed reset on play -->
+            <button onClick="playVids()">Play All</button>
             <button onClick="resetVids()">Reset All</button>
         </div>
     </div>

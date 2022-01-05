@@ -15,16 +15,15 @@
 <script src="vid-controls.js"></script>
 
 <body>
-    <h1>iPad 0</h1>
+    <h1 id="title">iPad 0</h1>
     <h2 id="timer">00:00:00</h2>
     <div class="container">
-        <video id="iPad0" class="vid" playsinline controls muted="muted" preload="auto" loop>
-            <source src="https://dl.dropboxusercontent.com/s/83bhuozolwtyxpc/iPad0-100mb.mp4?dl=0" type="video/mp4">
+        <video id="iPad0" class="vid" playsinline muted="muted" preload="auto" loop crossorigin="anonymous">
+            <source src="https://dl.dropboxusercontent.com/s/h8s8nvg7dfsxuwh/iPad0-80mb.mp4?dl=0" type="video/mp4">
         </video>
     </div>
     <script>
         var thisName = 'iPad0';
-        document.read
         var video = document.getElementById(thisName);
 
         var socket = io();
@@ -46,10 +45,22 @@
             console.log(video.currentTime);
         }
 
-        // Detect iOS and if it is, add the crossorigin to the video player so that it is working as expected
-        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-            document.getElementById(thisName).setAttribute("crossorigin", "true");
-        };
+        //debug controls 
+        socket.on("debugOff", () => {
+            console.log("Turning off debug controls");
+            hideDebugControls();
+        });
+
+        socket.on("debugOn", () => {
+            console.log("Turning on debug controls");
+            showDebugControls();
+        });
+
+
+        // // Detect iOS and if it is, add the crossorigin to the video player so that it is working as expected
+        // if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        //     document.getElementById(thisName).setAttribute("crossorigin", "true");
+        // };
 
         video.ontimeupdate = (e) => {
             var hours = parseInt(video.currentTime / (60 * 60), 10);

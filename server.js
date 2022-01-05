@@ -80,6 +80,18 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('resetVids', 'blah');
   })
 
+  // DEBUG CONTROLLERS
+  // ---------------------------------------
+  socket.on('debugOn', () => {
+    console.log("Global show debug info called");
+    socket.broadcast.emit('debugOn', 'blah');
+  });
+
+    socket.on('debugOff', () => {
+    console.log("Global hide debug info called");
+    socket.broadcast.emit('debugOff', 'blah');
+  });
+
   // CONNECTION MANAGERS 
   // ---------------------------------------
   // Control Panel Connects
