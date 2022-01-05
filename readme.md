@@ -65,6 +65,20 @@ timecode-h264.mp4 - https://dl.dropboxusercontent.com/s/94x86el5u7onvcg/timecode
 (recompressed) iPhone1.mp4 — https://dl.dropboxusercontent.com/s/u7k0o67z9d087et/iPhone1-80mb.mp4?dl=0
 audio - https://dl.dropboxusercontent.com/s/mc0hqkj6cgb9tw7/audio_only.mp4?dl=0
 
+#### Recompressed 100mb no Audio
+
+(recompressed) iPad0.mp4 - https://dl.dropboxusercontent.com/s/iaeusacux4dl20e/iPad0-100mb-mute.mp4?dl=0
+(recompressed) iPad1.mp4 — https://dl.dropboxusercontent.com/s/pdjlbf4t9ad0toh/iPad1-100mb-mute.mp4?dl=0
+(recompressed) iPad2.mp4 — https://dl.dropboxusercontent.com/s/g3qo5l9sbwtya7f/iPad2-100mb-mute.mp4?dl=0
+(recompressed) iPad3.mp4 — https://dl.dropboxusercontent.com/s/7fe1h44813rvir1/iPad3-100mb-mute.mp4?dl=0
+(recompressed) iPad4.mp4 — https://dl.dropboxusercontent.com/s/t5d4ohg4vts7l5r/iPad4-100mb-mute.mp4?dl=0
+(recompressed) iPad5.mp4 — https://dl.dropboxusercontent.com/s/31folimjwyci8fk/iPad5-100mb-mute.mp4?dl=0
+(recompressed) iPad6.mp4 — https://dl.dropboxusercontent.com/s/wktkia82yr08vlu/iPad6-100mb-mute.mp4?dl=0
+(recompressed) iPad7.mp4 — https://dl.dropboxusercontent.com/s/r1amyz0mfzttp37/iPad7-100mb-mute.mp4?dl=0
+(recompressed) iPhone0.mp4 — https://dl.dropboxusercontent.com/s/tvgp6tft2cprwg4/iPhone0-100mb-mute.mp4?dl=0
+(recompressed) iPhone1.mp4 — https://dl.dropboxusercontent.com/s/u4n0ieoqqg0b83g/iPhone1-100mb-mute.mp4?dl=0
+audio - https://dl.dropboxusercontent.com/s/mc0hqkj6cgb9tw7/audio_only.mp4?dl=0
+
 #### Timecodes Display Debugging
 
 iPad 0 — iOS 15.2 | Displays TC correctly
