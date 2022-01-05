@@ -64,7 +64,7 @@
         }
 
         .controls>button {
-            margin: 1rem 3rem;
+            margin: 1rem 1rem;
             padding: 1rem 2rem;
             text-transform: uppercase;
         }
@@ -110,14 +110,15 @@
         vidsPlaying = !vidsPlaying;
         if (vidsPlaying === true) {
             console.log("Calling global PLAY");
-            //TODO If play, setTimeout to resetVids in 1.5mins
-            //const resetTimeout = setTimeout(resetVids, 109077);
-            //const resetTimeout = setTimeout(resetVids, 3000);
         } else {
             console.log("Calling global PAUSE");
-            //TODO If pause, pause timeout
         }
         socket.emit('callPlayVids', 'foo');
+    }
+
+    function playVidsWithCountdown() {
+        vidsPlaying = true;
+        socket.emit('callPlayVidsWithCountdown', 'foo');
     }
 
     function resetVids() {
@@ -199,7 +200,7 @@
         <h2>Live Controls</h2>
         <div class="controls">
             <!-- TODO: Implement timed reset on play -->
-            <button onClick="playVids()">Play All</button>
+            <button onClick="playVidsWithCountdown()">Play All</button>
             <button onClick="resetVids()">Reset All</button>
         </div>
     </div>

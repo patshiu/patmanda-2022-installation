@@ -1,9 +1,11 @@
+const { count } = require('console');
 const express = require('express');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
+var countdownTimer = null;
 
 // Node IDs 
 let connectionTable = {
@@ -74,15 +76,46 @@ io.on('connection', (socket) => {
   // VIDEO CONTROLLERS
   // ---------------------------------------
   socket.on('callPlayVids', () => {
+    clearTimeout(countdownTimer);
     console.log("Global PLAY/PAUSE called");
-    socket.broadcast.emit('playVids', 'blah');
-    //TODO: When vids are done, call reset and play again. This is to prevent issues with lagging vids. 
+    socket.broadcast.emit('playVids', 'blah'); 
   });
 
+  //TODO: When vids are done, call reset and play again. This is to prevent issues with lagging vids.
+  //const resetTimeout = setTimeout(resetVids, 109077);
+  socket.on('callPlayVidsWithCountdown', () => { 
+    startLoopingVids();
+  })
+
+  function startLoopingVids() { 
+    console.log("LOOPING PLAY called");
+    // Reset all vids
+    resetAllVids();
+    // Wait 2 seconds
+    setTimeout(() => {
+      //console.log("It's been 2 seconds, all devices should be reset.")
+      //console.log("Calling global PLAY and starting countdown to RESET.")
+      // Play all vids
+      socket.broadcast.emit('playVids', 'blah');
+      // After vid duration, call playVidsAgain()
+      countdownTimer = setTimeout( playVidsAgain, 109070);
+    }, 2000);  
+  }
+  function playVidsAgain() { 
+    resetAllVids();
+    startLoopingVids();
+  }
+
   socket.on('callResetVids', () => { 
+    resetAllVids();
+  })
+
+  function resetAllVids() {
+    clearTimeout(countdownTimer);
+    //console.log("clearTimeout called");
     console.log("Global RESET called");
     socket.broadcast.emit('resetVids', 'blah');
-  })
+  }
 
   // DEBUG CONTROLLERS
   // ---------------------------------------
