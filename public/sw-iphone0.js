@@ -1,7 +1,7 @@
-const staticCacheName = 'iPhone0Cache-v01';
+const staticCacheName = 'iPhone0Cache-v02';
 const assets = [
     'iphone0.html',
-    'https://dl.dropboxusercontent.com/s/vpd5lolbz5rexv7/iPhone0-80mb.mp4?dl=0',
+    // 'https://dl.dropboxusercontent.com/s/vpd5lolbz5rexv7/iPhone0-80mb.mp4?dl=0',
     'style/normalize.css',
     'style/styles.css',
     'https://cdn.socket.io/4.4.0/socket.io.min.js',

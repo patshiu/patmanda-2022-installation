@@ -1,7 +1,7 @@
-const staticCacheName = 'iPad0Cache-v01';
+const staticCacheName = 'iPad0Cache-v02';
 const assets = [
     'ipad0.html',
-    'https://dl.dropboxusercontent.com/s/h8s8nvg7dfsxuwh/iPad0-80mb.mp4?dl=0',
+    // 'https://dl.dropboxusercontent.com/s/h8s8nvg7dfsxuwh/iPad0-80mb.mp4?dl=0',
     'style/normalize.css',
     'style/styles.css',
     'https://cdn.socket.io/4.4.0/socket.io.min.js',
@@ -31,10 +31,10 @@ self.addEventListener('activate', evt => {
 });
 
 // fetch event
-self.addEventListener('fetch', evt => { 
+self.addEventListener('fetch', evt => {
     evt.respondWith(
-        caches.match(evt.request).then(cacheRes => { 
+        caches.match(evt.request).then(cacheRes => {
             return cacheRes || fetch(evt.request);
         })
-    )
-})
+    );
+});
