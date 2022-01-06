@@ -21,7 +21,8 @@
 - [x] Host vids externally
 - [x] Remove debugging labels
 - [x] Set up audio
-- [ ] Set up periodic auto-reset
+- [x] Set up periodic auto-reset
+- [ ] Try with webm files
 
 #### Video URLS
 
@@ -92,12 +93,3 @@ iPad7 - https://s3.amazonaws.com/files.calebegg.com/iPad7-80mb.mp4
 **iPhone0 - https://s3.amazonaws.com/files.calebegg.com/iPhone0-80mb.mp4**
 iPhone1 - https://s3.amazonaws.com/files.calebegg.com/iPhone1-80mb.mp4
 **audio - https://s3.amazonaws.com/files.calebegg.com/audio_only.mp4**
-
-#### Timecodes Display Debugging
-
-iPad 0 — iOS 15.2 | Displays TC correctly
-iPad 1 - iOS 12.4
-iPad 2 — iOS 14.6 | Displays TC correctly
-iPad 3 - iOS 12.4
-iPhone 0 - iOS 12.2
-iPhone 1 - iOS 15.1 | Displays TC correctly
