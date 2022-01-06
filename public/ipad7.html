@@ -70,23 +70,18 @@
             showDebugControls();
         });
 
-        // // Detect iOS and if it is, add the crossorigin to the video player so that it is working as expected
-        // if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-        //     document.getElementById(thisName).setAttribute("crossorigin", "true");
-        // };
-
-        // //Cache Service Worker
-        // if ('serviceWorker' in navigator) {
-        //     window.addEventListener('load', function () {
-        //         navigator.serviceWorker.register('/sw-ipad7.js').then(function (registration) {
-        //             // Registration was successful
-        //             console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        //         }, function (err) {
-        //             // registration failed :(
-        //             console.log('ServiceWorker registration failed: ', err);
-        //         });
-        //     });
-        // }
+        //Cache Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
     </script>
 </body>
 
