@@ -79,6 +79,20 @@ audio - https://dl.dropboxusercontent.com/s/mc0hqkj6cgb9tw7/audio_only.mp4?dl=0
 (recompressed) iPhone1.mp4 — https://dl.dropboxusercontent.com/s/u4n0ieoqqg0b83g/iPhone1-100mb-mute.mp4?dl=0
 audio - https://dl.dropboxusercontent.com/s/mc0hqkj6cgb9tw7/audio_only.mp4?dl=0
 
+### On AWS
+
+**iPad0 - https://s3.amazonaws.com/files.calebegg.com/iPad0-80mb.mp4**
+**iPad1 - https://s3.amazonaws.com/files.calebegg.com/iPad1-80mb.mp4**
+**iPad2 - https://s3.amazonaws.com/files.calebegg.com/iPad2-80mb.mp4**
+**iPad3 - https://s3.amazonaws.com/files.calebegg.com/iPad3-80mb.mp4**
+iPad4 - https://s3.amazonaws.com/files.calebegg.com/iPad4-80mb.mp4
+iPad5 - https://s3.amazonaws.com/files.calebegg.com/iPad5-80mb.mp4
+iPad6 - https://s3.amazonaws.com/files.calebegg.com/iPad6-80mb.mp4
+iPad7 - https://s3.amazonaws.com/files.calebegg.com/iPad7-80mb.mp4
+**iPhone0 - https://s3.amazonaws.com/files.calebegg.com/iPhone0-80mb.mp4**
+iPhone1 - https://s3.amazonaws.com/files.calebegg.com/iPhone1-80mb.mp4
+**audio - https://s3.amazonaws.com/files.calebegg.com/audio_only.mp4**
+
 #### Timecodes Display Debugging
 
 iPad 0 — iOS 15.2 | Displays TC correctly
