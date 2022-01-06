@@ -42,9 +42,12 @@
             rewind(video);
         });
 
-        video.ontimeupdate = (e) => {
-            console.log(video.currentTime);
-        }
+
+        //page refresh control 
+        socket.on("refreshPage", () => {
+            console.log("REFRESH");
+            window.location.reload();
+        });
 
         //debug controls 
         socket.on("debugOff", () => {
@@ -57,6 +60,10 @@
             showDebugControls();
         });
 
+        //timecode display functions 
+        video.ontimeupdate = (e) => {
+            console.log(video.currentTime);
+        }
 
         video.ontimeupdate = (e) => {
             var hours = parseInt(video.currentTime / (60 * 60), 10);
@@ -70,7 +77,6 @@
                 document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds
             }
         }
-
         // //Cache Service Worker
         // if ('serviceWorker' in navigator) {
         //     window.addEventListener('load', function () {

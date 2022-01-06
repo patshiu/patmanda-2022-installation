@@ -128,6 +128,11 @@
         socket.emit('callResetVids', 'foo');
     }
 
+    function refreshPages() {
+        console.log("Calling REFRESH all  pages.");
+        socket.emit('callRefreshPages', 'foo');
+    }
+
     // show / hide debugging details
     function showDebug() {
         console.log("Show debugging details");
@@ -201,6 +206,7 @@
         <div class="controls">
             <!-- TODO: Implement timed reset on play -->
             <button onClick="playVidsWithCountdown()">Play All</button>
+            <button onClick="refreshPages()">Refresh Pages</button>
             <button onClick="resetVids()">Reset All</button>
         </div>
     </div>

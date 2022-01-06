@@ -117,6 +117,10 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('resetVids', 'blah');
   }
 
+  socket.on('callRefreshPages', () => { 
+    socket.broadcast.emit('refreshPage', 'blah');
+  })
+
   // DEBUG CONTROLLERS
   // ---------------------------------------
   socket.on('debugOn', () => {
