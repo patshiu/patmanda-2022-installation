@@ -34,7 +34,8 @@
         //vid controls 
         socket.on("playVids", () => {
             console.log("PLAY / PAUSE");
-            playPause(video);
+            // playPause(video);
+            video.play();
         });
         socket.on("resetVids", () => {
             console.log("RESET");

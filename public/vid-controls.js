@@ -8,8 +8,8 @@ function playPause(myVideo) {
 } 
 
 function rewind(myVideo) { 
-    if (myVideo.play)
-        myVideo.pause();
+    // if (myVideo.play)
+    //     myVideo.pause();
     myVideo.currentTime = 0;
 }
 
