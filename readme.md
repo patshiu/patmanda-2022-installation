@@ -1,5 +1,3 @@
-# [https://patmanda-2022.onrender.com/](https://patmanda-2022.onrender.com/)
-
 ## Setup:
 
 1. Download & install node js https://nodejs.org/en/download/
@@ -102,6 +100,7 @@ iPhone1 - https://s3.amazonaws.com/files.calebegg.com/iPhone1-80mb.mp4
 ### Cache References
 
 https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
+https://coderedirect.com/questions/329966/progressive-web-app-uncaught-in-promise-typeerror-failed-to-fetch
 https://w3c.github.io/ServiceWorker/#cache-put
 https://developer.mozilla.org/en-US/docs/Web/API/Cache/put
 https://stackoverflow.com/questions/15787380/what-does-the-http-206-partial-content-status-message-mean-and-how-do-i-fully-lo
