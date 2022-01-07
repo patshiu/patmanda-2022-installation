@@ -23,7 +23,7 @@
 - [x] Set up audio
 - [x] Set up periodic auto-reset
 - [x] Try with webm files
-- [ ] Periodic page refresh
+- [x] Periodic page refresh
 - [x] Sort out doble reset error
 
 #### Video URLS
@@ -67,6 +67,7 @@ timecode-h264.mp4 - https://dl.dropboxusercontent.com/s/94x86el5u7onvcg/timecode
 (recompressed) iPhone0.mp4 — https://dl.dropboxusercontent.com/s/vpd5lolbz5rexv7/iPhone0-80mb.mp4?dl=0
 (recompressed) iPhone1.mp4 — https://dl.dropboxusercontent.com/s/u7k0o67z9d087et/iPhone1-80mb.mp4?dl=0
 audio - https://dl.dropboxusercontent.com/s/mc0hqkj6cgb9tw7/audio_only.mp4?dl=0
+audio with video - https://dl.dropboxusercontent.com/s/9zkdit6v4ghodes/audio-with-vid.mp4?dl=0
 
 #### Recompressed 100mb no Audio
 
