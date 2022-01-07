@@ -19,8 +19,7 @@
     <h2 id="timer">00:00:00</h2>
     <div class="container">
         <video id="iPad0" class="vid" playsinline muted="muted" preload="auto" loop crossorigin="anonymous">
-            <source src="https://dl.dropboxusercontent.com/s/iaeusacux4dl20e/iPad0-100mb-mute.mp4?dl=0"
-                type="video/mp4">
+            <source src="https://dl.dropboxusercontent.com/s/h8s8nvg7dfsxuwh/iPad0-80mb.mp4?dl=0" type="video/mp4">
         </video>
     </div>
     <script>
@@ -79,18 +78,18 @@
             }
         }
 
-        // //Cache Service Worker
-        // if ('serviceWorker' in navigator) {
-        //     window.addEventListener('load', function () {
-        //         navigator.serviceWorker.register('/sw-ipad0.js').then(function (registration) {
-        //             // Registration was successful
-        //             console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        //         }, function (err) {
-        //             // registration failed :(
-        //             console.log('ServiceWorker registration failed: ', err);
-        //         });
-        //     });
-        // }
+        //Cache Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
     </script>
 </body>
 
