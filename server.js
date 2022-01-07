@@ -60,6 +60,8 @@ let connectionTable = {
 };
 
 var connectionMap = Object;
+var playCount = 0; 
+const MAX_PLAY_COUNT = 5;
 
 app.use(express.static('public'))
 
@@ -89,18 +91,41 @@ io.on('connection', (socket) => {
 
   function startLoopingVids() { 
     console.log("LOOPING PLAY called");
-    // Reset all vids
-    resetAllVids();
-    // Wait 2 seconds
-    setTimeout(() => {
-      //console.log("It's been 2 seconds, all devices should be reset.")
-      //console.log("Calling global PLAY and starting countdown to RESET.")
-      // Play all vids
-      socket.broadcast.emit('playVids', 'blah');
-      // After vid duration, call playVidsAgain()
-      countdownTimer = setTimeout( playVidsAgain, 109070);
-    }, 2000);  
+    //firstCheck if video has play X rounds 
+    if (playCount >= MAX_PLAY_COUNT) {
+      //if video has played X times, call refresh and wait 2 secs, 
+      console.log(`Max play count of ${MAX_PLAY_COUNT} reached, refreshing pages.`)
+      socket.broadcast.emit('refreshPage', 'foo');
+      // Wait 2 seconds
+      setTimeout(() => {
+        //console.log("It's been 2 seconds, all devices should be reset.")
+        //console.log("Calling global PLAY and starting countdown to RESET.")
+        // increment playCount 
+        playCount = 0;
+        console.log(`current playCount: ${playCount}`);
+        // Play all vids
+        socket.broadcast.emit('playVids', 'blah');
+        // After vid duration, call playVidsAgain()
+        countdownTimer = setTimeout(playVidsAgain, 109070);
+      }, 4000);
+    } else { 
+      // Reset all vids
+      resetAllVids();
+      // Wait 2 seconds
+      setTimeout(() => {
+        //console.log("It's been 2 seconds, all devices should be reset.")
+        //console.log("Calling global PLAY and starting countdown to RESET.")
+        // increment playCount 
+        playCount++;
+        console.log(`current playCount: ${playCount}`);
+        // Play all vids
+        socket.broadcast.emit('playVids', 'blah');
+        // After vid duration, call playVidsAgain()
+        countdownTimer = setTimeout(playVidsAgain, 109070);
+      }, 2000);  
+    }
   }
+
   function playVidsAgain() { 
     startLoopingVids();
   }

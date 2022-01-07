@@ -24,7 +24,7 @@
 - [x] Set up periodic auto-reset
 - [x] Try with webm files
 - [ ] Periodic page refresh
-- [ ] Sort out doble reset error
+- [x] Sort out doble reset error
 
 #### Video URLS
 
