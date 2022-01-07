@@ -102,7 +102,6 @@ io.on('connection', (socket) => {
     }, 2000);  
   }
   function playVidsAgain() { 
-    resetAllVids();
     startLoopingVids();
   }
 
@@ -114,23 +113,23 @@ io.on('connection', (socket) => {
     clearTimeout(countdownTimer);
     //console.log("clearTimeout called");
     console.log("Global RESET called");
-    socket.broadcast.emit('resetVids', 'blah');
+    socket.broadcast.emit('resetVids', 'foo');
   }
 
   socket.on('callRefreshPages', () => { 
-    socket.broadcast.emit('refreshPage', 'blah');
+    socket.broadcast.emit('refreshPage', 'foo');
   })
 
   // DEBUG CONTROLLERS
   // ---------------------------------------
   socket.on('debugOn', () => {
     console.log("Global show debug info called");
-    socket.broadcast.emit('debugOn', 'blah');
+    socket.broadcast.emit('debugOn', 'foo');
   });
 
     socket.on('debugOff', () => {
     console.log("Global hide debug info called");
-    socket.broadcast.emit('debugOff', 'blah');
+    socket.broadcast.emit('debugOff', 'foo');
   });
 
   // CONNECTION MANAGERS 

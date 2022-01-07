@@ -22,7 +22,9 @@
 - [x] Remove debugging labels
 - [x] Set up audio
 - [x] Set up periodic auto-reset
-- [ ] Try with webm files
+- [x] Try with webm files
+- [ ] Periodic page refresh
+- [ ] Sort out doble reset error
 
 #### Video URLS
 
