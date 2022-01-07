@@ -1,4 +1,4 @@
-const staticCacheName = 'patmanda-cache-2022-01-06';
+const staticCacheName = 'patmanda-cache-2022-01-06-1126';
 const errorCacheName = 'errors';
 const assets = [
     'ipad0.html',
