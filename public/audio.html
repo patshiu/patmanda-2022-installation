@@ -15,8 +15,8 @@
 <script src="vid-controls.js"></script>
 
 <body>
-    <h1 id="title" style="color: yellow; pointer-events: none;">Audio</h1>
-    <h2 id="timer" style="color: yellow; pointer-events: none;">00:00:00</h2>
+    <h1 id="title" style="color: blue; pointer-events: none;">Audio</h1>
+    <h2 id="timer" style="color: blue; pointer-events: none;">00:00:00</h2>
     <div class="container">
         <video id="audio" class="vid" playsinline controls muted preload="auto" loop crossorigin="anonymous">
             <source src="https://dl.dropboxusercontent.com/s/mc0hqkj6cgb9tw7/audio_only.mp4?dl=0" type="video/mp4">
@@ -35,10 +35,12 @@
         socket.on("playVids", () => {
             // playPause(video)
             // pause for 500 millis
-            setTimeout(() => {
-                console.log("PLAY");
-                video.play()
-            }, 250);
+            // setTimeout(() => {
+            //     console.log("PLAY");
+            //     video.play()
+            // }, 250);
+            console.log("PLAY");
+            video.play()
         });
         socket.on("resetVids", () => {
             console.log("RESET");
