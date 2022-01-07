@@ -96,3 +96,22 @@ iPad7 - https://s3.amazonaws.com/files.calebegg.com/iPad7-80mb.mp4
 **iPhone0 - https://s3.amazonaws.com/files.calebegg.com/iPhone0-80mb.mp4**
 iPhone1 - https://s3.amazonaws.com/files.calebegg.com/iPhone1-80mb.mp4
 **audio - https://s3.amazonaws.com/files.calebegg.com/audio_only.mp4**
+
+## References
+
+### Cache References
+
+https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
+https://w3c.github.io/ServiceWorker/#cache-put
+https://developer.mozilla.org/en-US/docs/Web/API/Cache/put
+https://stackoverflow.com/questions/15787380/what-does-the-http-206-partial-content-status-message-mean-and-how-do-i-fully-lo
+https://stackoverflow.com/questions/9755168/why-does-firebug-show-a-206-partial-content-response-on-a-video-loading-reques/9755372#9755372
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/206
+https://github.com/whatwg/fetch/issues/144
+https://www.youtube.com/watch?v=g9LfyCZjeKI
+
+### Video Format References
+
+https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs
+https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers#webm
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canplaythrough_event
