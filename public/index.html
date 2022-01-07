@@ -118,6 +118,7 @@
 
     function playVidsWithCountdown() {
         vidsPlaying = true;
+        console.log("Calling global AUTOPLAY");
         socket.emit('callPlayVidsWithCountdown', 'foo');
     }
 

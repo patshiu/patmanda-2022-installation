@@ -117,7 +117,7 @@ io.on('connection', (socket) => {
         //console.log("Calling global PLAY and starting countdown to RESET.")
         // increment playCount 
         // playCount++;
-        console.log(`current playCount: ${playCount}`);
+        // console.log(`current playCount: ${playCount}`);
         // Play all vids
         socket.broadcast.emit('playVids', 'blah');
         // After vid duration, call playVidsAgain()
