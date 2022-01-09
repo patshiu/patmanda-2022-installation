@@ -108,6 +108,32 @@ iPad7 - https://dl.dropboxusercontent.com/s/otgtmr0qv8udf6j/iPad7-50mb.mp4?dl=0
 iPhone0 - https://dl.dropboxusercontent.com/s/tdyawog2rek88h7/iPhone0-30mb.mp4?dl=0
 iPhone1 - https://dl.dropboxusercontent.com/s/q2wqztqp2hh0uy5/iPhone1-30mb.mp4?dl=0
 
+### Recompressed 640h 24mb
+
+https://dl.dropboxusercontent.com/s/91mbtkke1h21jux/iPad0-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/nvqiyfylu0ta465/iPad1-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/b2dglfq2o67c293/iPad2-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/dponh1i3mm03g8k/iPad3-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/wbzu7ur60ehfc08/iPad4-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/4rycl9t60c8c3il/iPad5-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/rpede84wabghdgv/iPad6-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/ro5q9uadq21lbof/iPad7-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/48heamu1qa4ttzf/iPhone0-640.mp4?dl=0
+https://dl.dropboxusercontent.com/s/003bapc7rw6vnfz/iPhone1-640.mp4?dl=0
+
+### Recompressed 720 34mb
+
+https://dl.dropboxusercontent.com/s/a4cib109veyibu9/iPad0-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/rn6ujwi8twunu8y/iPad1-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/gnfonq8p15ro56m/iPad2-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/3t0adyknmld7b2b/iPad3-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/0tf0xzv0pmtfdtp/iPad4-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/us5w78zej0kiu0a/iPad5-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/bx6ip98kgshhham/iPad6-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/wr6nbxh84l9znse/iPad7-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/kc07j29lk8zuco5/iPhone0-720.mp4?dl=0
+https://dl.dropboxusercontent.com/s/fdmy8c8q8vckyon/iPhone1-720.mp4?dl=0
+
 ## References
 
 ### Cache References
