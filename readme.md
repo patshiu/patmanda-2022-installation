@@ -95,6 +95,19 @@ iPad7 - https://s3.amazonaws.com/files.calebegg.com/iPad7-80mb.mp4
 iPhone1 - https://s3.amazonaws.com/files.calebegg.com/iPhone1-80mb.mp4
 **audio - https://s3.amazonaws.com/files.calebegg.com/audio_only.mp4**
 
+### Recompressed 60mb
+
+iPad0 - https://dl.dropboxusercontent.com/s/bau27jbb0yv5oul/iPad0-50mb.mp4?dl=0
+iPad1 - https://dl.dropboxusercontent.com/s/b7evoeu9czvbrrv/iPad1-50mb.mp4?dl=0
+iPad2 - https://dl.dropboxusercontent.com/s/ln3ogsxflkidsia/iPad2-50mb.mp4?dl=0
+iPad3 - https://dl.dropboxusercontent.com/s/qfkf2xax0sh44zh/iPad3-50mb.mp4?dl=0
+iPad4 - https://dl.dropboxusercontent.com/s/meu0spqn1sgrgan/iPad4-50mb.mp4?dl=0
+iPad5 - https://dl.dropboxusercontent.com/s/0da5y464c8r91fs/iPad5-50mb.mp4?dl=0
+iPad6 - https://dl.dropboxusercontent.com/s/4n90e34fsleodfj/iPad6-50mb.mp4?dl=0
+iPad7 - https://dl.dropboxusercontent.com/s/otgtmr0qv8udf6j/iPad7-50mb.mp4?dl=0
+iPhone0 - https://dl.dropboxusercontent.com/s/tdyawog2rek88h7/iPhone0-30mb.mp4?dl=0
+iPhone1 - https://dl.dropboxusercontent.com/s/q2wqztqp2hh0uy5/iPhone1-30mb.mp4?dl=0
+
 ## References
 
 ### Cache References
